@@ -21,8 +21,6 @@ class PasienController extends Controller
                  'gender' => $request['gender'],
                  'bahasa' => $request ['bahasa'],
                 ];
-
-                
                 return view('pasien')->with('request', $request);
             } else {
                 return view('pasien', compact([
@@ -52,11 +50,11 @@ class PasienController extends Controller
         $response = json_decode($response->getBody());
         // return $response;
 
-         Patient::create([
-            'name' => $response->entry[0]->resource->name[0]->text,
-            'gender'=> $response->entry[0]->resource->gender,
-            'bahasa' => $response->entry[0]->resource->communication[0]->language->text,
-         ]);
+        //  Patient::create([
+        //     'name' => $response->entry[0]->resource->name[0]->text,
+        //     'gender'=> $response->entry[0]->resource->gender,
+        //     'bahasa' => $response->entry[0]->resource->communication[0]->language->text,
+        //  ]);
 
 
         $namaPasien =  $response->entry[0]->resource->name[0]->text;

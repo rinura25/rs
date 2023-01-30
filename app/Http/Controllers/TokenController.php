@@ -32,8 +32,10 @@ class TokenController extends Controller
             'issued_at'=> $response->issued_at,
         ]);
         $access_token =  $response->access_token;
+        $organization_name = $response->organization_name;
         return view('status', [
             'access_token' => $access_token,
+            'organization_name' => $organization_name,
         ]);
     }
 }

@@ -71,11 +71,6 @@ class DokterController extends Controller
             'gender' => $gender,
             'alamat' => $alamat
         ]);
-        // return view('pasien', [
-        //     'namaPasien' => $namaPasien,
-        //     'gender' => $gender,
-        //     'bahasa' => $bahasa,
-        // ]);
 
         // $entry = $response->entry[0];
         // $resource = $entry->resource;

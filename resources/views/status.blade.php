@@ -24,8 +24,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-12">
-                <b>Auth URL :</b> {{ env('AUTH_BASE_URL') }} <br>
-                <b>Base URL :</b> {{ env('SATU_SEHAT_BASE_URL') }} <br>
+                <b>Organization ID :</b> {{ $organization_name }} <br>
                 <b>Client ID :</b> {{(env('CLIENT_ID')) }} <br>
                 <b>Secret ID :</b> {{(env('CLIENT_SECRET')) }} <br>
                 <b>Token :</b> {{ $access_token }} <br>
